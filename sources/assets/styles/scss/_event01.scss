@@ -17,7 +17,7 @@ article.event01 { padding-top: 80px;
 
 	.event-detail { min-width: $contents-min-width; background: url('/assets/images/bg_detail.jpg') center top no-repeat;
 		.event-detail-inner { position: relative; margin: 0 auto; padding-top: 62px; height: 1076px; width: $contents-min-width; }
-		.event-detail-contents { display: block; margin: 0 auto; height: 866px; width: 1090px; background: url('/assets/images/event01_contents.png') center top no-repeat;
+		.event-detail-contents { display: block; margin: 0 auto; height: 872px; width: 1090px; background: url('/assets/images/event01_contents.png') center top no-repeat;
 			* { display: none; }
 		}
 		.btn-reply { display: block; margin: 0 auto; text-indent: -9999px; @include sprite($sd-btn-reply); }
