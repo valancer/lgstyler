@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+@import url(magnific-popup.css);
+
+/**
+ * variable
+ */
+$font-base-stack: sans-serif;
+$contents-max-width: 1800px;
+$contents-min-width: 1646px;
+
+body { min-width: $contents-min-width; background-color: #fff; }
+
+@import "base";
+@import "sprites";
+
+
+
+/**
+ * z-index
+**/
+$z-layers: (
+	'modal':            1000,
+	'modaless':          900,
+	'gnb':	             800,
+	'dropdown':          500,
+	'hover':             200,
+	'tooltip':           100,
+	'default':             1,
+	'bottomless-pit': -10000
+);
+
+@function z($layer) {
+	@if not map-has-key($z-layers, $layer) {
+		@warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+	}
+
+	@return map-get($z-layers, $layer);
+}
+
+
+/**
+ * mixin
+ */
+@mixin max-desktop {
+	@media only screen and (min-width: #{$contents-min-width + 1px}) {
+		@content;
+	}
+}
+
+
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+
+/* page header */
+.page-header { position: fixed; top: 0; right: 0; left: 0; z-index: z("gnb"); min-width: 1200px; background-color: #fff;
+	.page-header-inner { position: relative; margin: 0 auto; height: 80px; width: 1200px; }
+	
+	.btn-lg { display: block; position: absolute; top: 50%; left: 0; margin-top: -$sd-btn-lg-height/2; text-indent: -9999px; @include sprite($sd-btn-lg); }
+	.btn-styler { display: block; position: absolute; top: 50%; right: 0; margin-top: -$sd-btn-styler-height/2; text-indent: -9999px; @include sprite($sd-btn-styler); }
+
+	.menus {
+		ul { text-align: center;
+			li { display: inline-block; margin-top: 30px; padding: 0 30px;
+				a { display: inline-block; position: relative; text-indent: -9999px;
+					&.btn-event01 { @include sprite($sd-btn-event01);
+						&.is-selected { @include sprite($sd-btn-event01-selected); }
+					}
+					&.btn-event02 { @include sprite($sd-btn-event02);
+						&.is-selected { @include sprite($sd-btn-event02-selected); }
+					}
+
+					&.is-selected {
+						&:before { content: ''; display: block; position: absolute; bottom: -43px; left: 50%; margin-left: -$sd-icon-selected01-width/2; @include sprite($sd-icon-selected01); }
+					}
+				}
+
+				+ li { border-left: 1px solid #c2c2c2; }
+			}
+		}
+	}
+}
+
+
+/* page footer */
+.page-footer { background-color: #808080;
+	.page-footer-inner { margin: 0 auto; padding-top: 28px; height: 62px; min-width: 1200px;
+		p { margin: 0 auto; height: 37px; width: 693px; text-indent: -9999px; background: url('/assets/images/bg_footer.png') center top no-repeat;
+			* { display: none; }
+		}
+	}
+}
+
+/**
+ * import
+ */
+@import "event01";
+
+

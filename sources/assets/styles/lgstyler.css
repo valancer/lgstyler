@@ -1,0 +1,398 @@
+@import url(magnific-popup.css);
+/**
+ * variable
+ */
+body {
+  min-width: 1646px;
+  background-color: #fff; }
+
+/* Common Style */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, q, s, samp, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  border: 0 none; }
+
+body {
+  position: relative;
+  /*min-height: 800px;*/
+  min-width: 1646px;
+  margin: 0 auto;
+  font-size: 100%;
+  line-height: 1.3em;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+header, h1 {
+  font-size: 100%; }
+
+html, body {
+  height: 100%; }
+
+caption, legend {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+caption {
+  display: none; }
+
+img {
+  border: none;
+  vertical-align: top;
+  /*width: 100%;*/ }
+
+select, input {
+  vertical-align: top; }
+
+hr {
+  display: none;
+  border: 0 none; }
+
+ol, ul, ul li {
+  list-style: none; }
+
+em {
+  font-style: normal; }
+
+menu li {
+  list-style: none; }
+
+address {
+  display: inline;
+  font-style: normal; }
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, textarea, keygen, select, button {
+  font-family: sans-serif; }
+
+strong {
+  font-weight: normal; }
+
+dfn {
+  font-style: normal; }
+
+/* link Style */
+a:link, a:visited, a:active, a:focus {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.hidden {
+  display: none !important; }
+
+.visible-hidden {
+  visibility: hidden !important; }
+
+.clear {
+  clear: both; }
+
+.txt-center {
+  text-align: center !important; }
+
+/* forms */
+fieldset {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+input[type=submit] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  border: 0px; }
+
+::-webkit-input-placeholder {
+  color: #4c4c4c; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #4c4c4c; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4c4c4c; }
+
+:-ms-input-placeholder {
+  color: #4c4c4c; }
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/**
+ * z-index
+**/
+/**
+ * mixin
+ */
+/* page header */
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 800;
+  min-width: 1200px;
+  background-color: #fff; }
+  .page-header .page-header-inner {
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    width: 1200px; }
+  .page-header .btn-lg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -15px;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: 0px -250px;
+    width: 112px;
+    height: 30px; }
+  .page-header .btn-styler {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -13px;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -142px -208px;
+    width: 178px;
+    height: 26px; }
+  .page-header .menus ul {
+    text-align: center; }
+    .page-header .menus ul li {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 0 30px; }
+      .page-header .menus ul li a {
+        display: inline-block;
+        position: relative;
+        text-indent: -9999px; }
+        .page-header .menus ul li a.btn-event01 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: 0px -110px;
+          width: 300px;
+          height: 20px; }
+          .page-header .menus ul li a.btn-event01.is-selected {
+            background-image: url(/assets/images/sprites.png);
+            background-position: 0px -136px;
+            width: 300px;
+            height: 20px; }
+        .page-header .menus ul li a.btn-event02 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: 0px -185px;
+          width: 294px;
+          height: 17px; }
+          .page-header .menus ul li a.btn-event02.is-selected {
+            background-image: url(/assets/images/sprites.png);
+            background-position: 0px -162px;
+            width: 294px;
+            height: 17px; }
+        .page-header .menus ul li a.is-selected:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -43px;
+          left: 50%;
+          margin-left: -19.5px;
+          background-image: url(/assets/images/sprites.png);
+          background-position: -306px -110px;
+          width: 39px;
+          height: 19px; }
+      .page-header .menus ul li + li {
+        border-left: 1px solid #c2c2c2; }
+
+/* page footer */
+.page-footer {
+  background-color: #808080; }
+  .page-footer .page-footer-inner {
+    margin: 0 auto;
+    padding-top: 28px;
+    height: 62px;
+    min-width: 1200px; }
+    .page-footer .page-footer-inner p {
+      margin: 0 auto;
+      height: 37px;
+      width: 693px;
+      text-indent: -9999px;
+      background: url("/assets/images/bg_footer.png") center top no-repeat; }
+      .page-footer .page-footer-inner p * {
+        display: none; }
+
+/**
+ * import
+ */
+/* CONTENTS */
+article.event01 {
+  padding-top: 80px; }
+  article.event01 > .title {
+    position: relative;
+    z-index: 1;
+    padding-top: 213px;
+    min-width: 1646px;
+    background: url("/assets/images/bg_video.jpg") center top no-repeat; }
+    article.event01 > .title .title-inner {
+      position: relative;
+      margin: 0 auto;
+      height: 487px;
+      width: 1646px; }
+    article.event01 > .title h1 {
+      display: none; }
+    article.event01 > .title .video-container {
+      margin: 0 auto;
+      height: 441px;
+      width: 757px; }
+    article.event01 > .title .caption {
+      display: none;
+      overflow: scroll;
+      margin: 2px auto;
+      padding: 15px 20px;
+      height: 83px;
+      width: 722px;
+      font-size: 13px;
+      color: #333;
+      line-height: 18px;
+      border: 1px solid #fff;
+      background-color: #e2e2e2; }
+    article.event01 > .title .btn-caption {
+      display: block;
+      position: absolute;
+      bottom: 15px;
+      left: 441px;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -118px -250px;
+      width: 71px;
+      height: 24px; }
+      article.event01 > .title .btn-caption.open {
+        bottom: -96px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -195px -250px;
+        width: 71px;
+        height: 24px; }
+        article.event01 > .title .btn-caption.open + .caption {
+          display: block; }
+  article.event01 .event-detail {
+    min-width: 1646px;
+    background: url("/assets/images/bg_detail.jpg") center top no-repeat; }
+    article.event01 .event-detail .event-detail-inner {
+      position: relative;
+      margin: 0 auto;
+      padding-top: 62px;
+      height: 1076px;
+      width: 1646px; }
+    article.event01 .event-detail .event-detail-contents {
+      display: block;
+      margin: 0 auto;
+      height: 866px;
+      width: 1090px;
+      background: url("/assets/images/event01_contents.png") center top no-repeat; }
+      article.event01 .event-detail .event-detail-contents * {
+        display: none; }
+    article.event01 .event-detail .btn-reply {
+      display: block;
+      margin: 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: 0px 0px;
+      width: 366px;
+      height: 104px; }
+    article.event01 .event-detail .btn-product {
+      display: block;
+      position: absolute;
+      bottom: 145px;
+      right: 130px;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: 0px -208px;
+      width: 136px;
+      height: 36px; }
+  article.event01 .gift {
+    height: 190px;
+    background-color: #dedede; }
+    article.event01 .gift .gift-inner {
+      position: relative;
+      top: -25px;
+      height: 215px;
+      min-width: 1646px;
+      background: url("/assets/images/bg_gift.png") center top no-repeat; }
+      article.event01 .gift .gift-inner * {
+        display: none; }
+  article.event01 .notice {
+    background-color: #f1f1f1; }
+    article.event01 .notice .notice-inner {
+      height: 370px;
+      min-width: 1646px;
+      background: url("/assets/images/bg_notice.png") center 52px no-repeat; }
+      article.event01 .notice .notice-inner * {
+        display: none; }

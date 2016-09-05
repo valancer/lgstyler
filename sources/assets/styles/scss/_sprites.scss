@@ -1,0 +1,206 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sd-btn-caption-name: 'sd-btn_caption';
+$sd-btn-caption-x: 118px;
+$sd-btn-caption-y: 250px;
+$sd-btn-caption-offset-x: -118px;
+$sd-btn-caption-offset-y: -250px;
+$sd-btn-caption-width: 71px;
+$sd-btn-caption-height: 24px;
+$sd-btn-caption-total-width: 366px;
+$sd-btn-caption-total-height: 280px;
+$sd-btn-caption-image: '/assets/images/sprites.png';
+$sd-btn-caption: (118px, 250px, -118px, -250px, 71px, 24px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_caption', );
+$sd-btn-caption-open-name: 'sd-btn_caption_open';
+$sd-btn-caption-open-x: 195px;
+$sd-btn-caption-open-y: 250px;
+$sd-btn-caption-open-offset-x: -195px;
+$sd-btn-caption-open-offset-y: -250px;
+$sd-btn-caption-open-width: 71px;
+$sd-btn-caption-open-height: 24px;
+$sd-btn-caption-open-total-width: 366px;
+$sd-btn-caption-open-total-height: 280px;
+$sd-btn-caption-open-image: '/assets/images/sprites.png';
+$sd-btn-caption-open: (195px, 250px, -195px, -250px, 71px, 24px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_caption_open', );
+$sd-btn-event01-name: 'sd-btn_event01';
+$sd-btn-event01-x: 0px;
+$sd-btn-event01-y: 110px;
+$sd-btn-event01-offset-x: 0px;
+$sd-btn-event01-offset-y: -110px;
+$sd-btn-event01-width: 300px;
+$sd-btn-event01-height: 20px;
+$sd-btn-event01-total-width: 366px;
+$sd-btn-event01-total-height: 280px;
+$sd-btn-event01-image: '/assets/images/sprites.png';
+$sd-btn-event01: (0px, 110px, 0px, -110px, 300px, 20px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_event01', );
+$sd-btn-event01-selected-name: 'sd-btn_event01_selected';
+$sd-btn-event01-selected-x: 0px;
+$sd-btn-event01-selected-y: 136px;
+$sd-btn-event01-selected-offset-x: 0px;
+$sd-btn-event01-selected-offset-y: -136px;
+$sd-btn-event01-selected-width: 300px;
+$sd-btn-event01-selected-height: 20px;
+$sd-btn-event01-selected-total-width: 366px;
+$sd-btn-event01-selected-total-height: 280px;
+$sd-btn-event01-selected-image: '/assets/images/sprites.png';
+$sd-btn-event01-selected: (0px, 136px, 0px, -136px, 300px, 20px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_event01_selected', );
+$sd-btn-event02-name: 'sd-btn_event02';
+$sd-btn-event02-x: 0px;
+$sd-btn-event02-y: 185px;
+$sd-btn-event02-offset-x: 0px;
+$sd-btn-event02-offset-y: -185px;
+$sd-btn-event02-width: 294px;
+$sd-btn-event02-height: 17px;
+$sd-btn-event02-total-width: 366px;
+$sd-btn-event02-total-height: 280px;
+$sd-btn-event02-image: '/assets/images/sprites.png';
+$sd-btn-event02: (0px, 185px, 0px, -185px, 294px, 17px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_event02', );
+$sd-btn-event02-selected-name: 'sd-btn_event02_selected';
+$sd-btn-event02-selected-x: 0px;
+$sd-btn-event02-selected-y: 162px;
+$sd-btn-event02-selected-offset-x: 0px;
+$sd-btn-event02-selected-offset-y: -162px;
+$sd-btn-event02-selected-width: 294px;
+$sd-btn-event02-selected-height: 17px;
+$sd-btn-event02-selected-total-width: 366px;
+$sd-btn-event02-selected-total-height: 280px;
+$sd-btn-event02-selected-image: '/assets/images/sprites.png';
+$sd-btn-event02-selected: (0px, 162px, 0px, -162px, 294px, 17px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_event02_selected', );
+$sd-btn-lg-name: 'sd-btn_lg';
+$sd-btn-lg-x: 0px;
+$sd-btn-lg-y: 250px;
+$sd-btn-lg-offset-x: 0px;
+$sd-btn-lg-offset-y: -250px;
+$sd-btn-lg-width: 112px;
+$sd-btn-lg-height: 30px;
+$sd-btn-lg-total-width: 366px;
+$sd-btn-lg-total-height: 280px;
+$sd-btn-lg-image: '/assets/images/sprites.png';
+$sd-btn-lg: (0px, 250px, 0px, -250px, 112px, 30px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_lg', );
+$sd-btn-product-name: 'sd-btn_product';
+$sd-btn-product-x: 0px;
+$sd-btn-product-y: 208px;
+$sd-btn-product-offset-x: 0px;
+$sd-btn-product-offset-y: -208px;
+$sd-btn-product-width: 136px;
+$sd-btn-product-height: 36px;
+$sd-btn-product-total-width: 366px;
+$sd-btn-product-total-height: 280px;
+$sd-btn-product-image: '/assets/images/sprites.png';
+$sd-btn-product: (0px, 208px, 0px, -208px, 136px, 36px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_product', );
+$sd-btn-reply-name: 'sd-btn_reply';
+$sd-btn-reply-x: 0px;
+$sd-btn-reply-y: 0px;
+$sd-btn-reply-offset-x: 0px;
+$sd-btn-reply-offset-y: 0px;
+$sd-btn-reply-width: 366px;
+$sd-btn-reply-height: 104px;
+$sd-btn-reply-total-width: 366px;
+$sd-btn-reply-total-height: 280px;
+$sd-btn-reply-image: '/assets/images/sprites.png';
+$sd-btn-reply: (0px, 0px, 0px, 0px, 366px, 104px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_reply', );
+$sd-btn-styler-name: 'sd-btn_styler';
+$sd-btn-styler-x: 142px;
+$sd-btn-styler-y: 208px;
+$sd-btn-styler-offset-x: -142px;
+$sd-btn-styler-offset-y: -208px;
+$sd-btn-styler-width: 178px;
+$sd-btn-styler-height: 26px;
+$sd-btn-styler-total-width: 366px;
+$sd-btn-styler-total-height: 280px;
+$sd-btn-styler-image: '/assets/images/sprites.png';
+$sd-btn-styler: (142px, 208px, -142px, -208px, 178px, 26px, 366px, 280px, '/assets/images/sprites.png', 'sd-btn_styler', );
+$sd-icon-selected01-name: 'sd-icon_selected01';
+$sd-icon-selected01-x: 306px;
+$sd-icon-selected01-y: 110px;
+$sd-icon-selected01-offset-x: -306px;
+$sd-icon-selected01-offset-y: -110px;
+$sd-icon-selected01-width: 39px;
+$sd-icon-selected01-height: 19px;
+$sd-icon-selected01-total-width: 366px;
+$sd-icon-selected01-total-height: 280px;
+$sd-icon-selected01-image: '/assets/images/sprites.png';
+$sd-icon-selected01: (306px, 110px, -306px, -110px, 39px, 19px, 366px, 280px, '/assets/images/sprites.png', 'sd-icon_selected01', );
+$spritesheet-width: 366px;
+$spritesheet-height: 280px;
+$spritesheet-image: '/assets/images/sprites.png';
+$spritesheet-sprites: ($sd-btn-caption, $sd-btn-caption-open, $sd-btn-event01, $sd-btn-event01-selected, $sd-btn-event02, $sd-btn-event02-selected, $sd-btn-lg, $sd-btn-product, $sd-btn-reply, $sd-btn-styler, $sd-icon-selected01, );
+$spritesheet: (366px, 280px, '/assets/images/sprites.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
