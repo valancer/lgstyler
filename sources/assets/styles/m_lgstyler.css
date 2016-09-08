@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(magnific-popup.css);
 /**
  * variable
@@ -231,25 +232,25 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     float: left;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -219px -98px;
+    background-position: -387px -19px;
     width: 81px;
     height: 22px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .page-header .btn-lg {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 381px 209px; } }
+        background-size: 505px 234px; } }
   .page-header .btn-styler {
     display: block;
     float: right;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -219px -72px;
+    background-position: -336px -116px;
     width: 138px;
     height: 20px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .page-header .btn-styler {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 381px 209px; } }
+        background-size: 505px 234px; } }
   .page-header .menus {
     clear: both;
     padding-top: 15px; }
@@ -268,40 +269,40 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           text-indent: -9999px; }
           .page-header .menus ul li a.btn-event01 {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: 0px -116px;
+            background-position: -219px -19px;
             width: 162px;
             height: 27px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
               .page-header .menus ul li a.btn-event01 {
                 background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                background-size: 381px 209px; } }
+                background-size: 505px 234px; } }
             .page-header .menus ul li a.btn-event01.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: 0px -149px;
+              background-position: -219px -52px;
               width: 162px;
               height: 27px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                 .page-header .menus ul li a.btn-event01.is-selected {
                   background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                  background-size: 381px 209px; } }
+                  background-size: 505px 234px; } }
           .page-header .menus ul li a.btn-event02 {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: 0px -182px;
+            background-position: 0px -116px;
             width: 162px;
             height: 27px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
               .page-header .menus ul li a.btn-event02 {
                 background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                background-size: 381px 209px; } }
+                background-size: 505px 234px; } }
             .page-header .menus ul li a.btn-event02.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -219px 0px;
+              background-position: -168px -116px;
               width: 162px;
               height: 27px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                 .page-header .menus ul li a.btn-event02.is-selected {
                   background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                  background-size: 381px 209px; } }
+                  background-size: 505px 234px; } }
           .page-header .menus ul li a.is-selected:before {
             content: '';
             display: block;
@@ -310,13 +311,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
             left: 50%;
             margin-left: -15.5px;
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -306px -98px;
+            background-position: -474px -19px;
             width: 31px;
             height: 16px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
               .page-header .menus ul li a.is-selected:before {
                 background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                background-size: 381px 209px; } }
+                background-size: 505px 234px; } }
         .page-header .menus ul li + li:before {
           content: '';
           display: block;
@@ -402,7 +403,7 @@ article.event01 {
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         article.event01 .event-detail .btn-reply {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 381px 209px; } }
+          background-size: 505px 234px; } }
     article.event01 .event-detail .btn-product {
       display: block;
       position: absolute;
@@ -410,13 +411,13 @@ article.event01 {
       right: 32px;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -219px -126px;
+      background-position: -387px -52px;
       width: 78px;
       height: 18px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         article.event01 .event-detail .btn-product {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 381px 209px; } }
+          background-size: 505px 234px; } }
   article.event01 .gift {
     background-color: #ddd; }
     article.event01 .gift .gift-inner {
@@ -464,7 +465,7 @@ article.event02 {
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       article.event02 .event02-detail .btn-naver {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 381px 209px; } }
+        background-size: 505px 234px; } }
   article.event02 .event02-detail .styler-feature {
     position: relative;
     height: 425px;
@@ -490,13 +491,13 @@ article.event02 {
       left: 25px;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -219px -126px;
+      background-position: -387px -52px;
       width: 78px;
       height: 18px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         article.event02 .event02-detail .styler-feature .btn-product {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 381px 209px; } }
+          background-size: 505px 234px; } }
   article.event02 .gift {
     background-color: #dbdbdb; }
     article.event02 .gift .gift-inner {
@@ -530,13 +531,13 @@ article.event02 {
     margin-left: 140px;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -320px -33px;
+    background-position: -179px -58px;
     width: 30px;
     height: 30px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .popup .mfp-close {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 381px 209px; } }
+        background-size: 505px 234px; } }
   .popup .contents {
     position: relative;
     height: 100%;
@@ -551,13 +552,13 @@ article.event02 {
       margin-left: -47.5px;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -219px -33px;
+      background-position: 0px -149px;
       width: 95px;
       height: 33px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .popup .contents .btn-application {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 381px 209px; } }
+          background-size: 505px 234px; } }
   .popup.feature01 .contents {
     background: url("/assets/images/mobile/popup01@2x.png") center top no-repeat;
     background-size: 100%; }
@@ -567,3 +568,192 @@ article.event02 {
   .popup.feature03 .contents {
     background: url("/assets/images/mobile/popup03@2x.png") center top no-repeat;
     background-size: 100%; }
+
+/* 응모팝업 */
+.popup-application {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  height: 492px;
+  width: 334px;
+  background: url("/assets/images/mobile/bg_application@2x.png") center top no-repeat;
+  background-size: 100%;
+  /* 기본 정보 */
+  /* 동의 항목 */ }
+  .popup-application > .title {
+    display: block;
+    margin: 0 5px 0 3px;
+    padding: 16px 0 15px 0;
+    border-bottom: 1px solid #de284f; }
+    .popup-application > .title span {
+      display: block;
+      margin: 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -219px 0px;
+      width: 286px;
+      height: 13px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .popup-application > .title span {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 505px 234px; } }
+  .popup-application .container {
+    padding: 0 30px 31px 29px; }
+  .popup-application .basic-info {
+    padding: 3px 0 19px 0;
+    color: #bdc3c5;
+    border-bottom: 1px dashed #b7b7b7; }
+    .popup-application .basic-info p {
+      padding: 15px 0 0 0; }
+    .popup-application .basic-info label {
+      display: inline-block;
+      margin-right: 5px;
+      text-indent: -9999px;
+      vertical-align: middle; }
+      .popup-application .basic-info label.txt-name {
+        margin-right: 12px;
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -33px -211px;
+        width: 19px;
+        height: 23px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .popup-application .basic-info label.txt-name {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 505px 234px; } }
+      .popup-application .basic-info label.txt-phone {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: 0px -211px;
+        width: 27px;
+        height: 23px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .popup-application .basic-info label.txt-phone {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 505px 234px; } }
+    .popup-application .basic-info input[type=text] {
+      height: 22px;
+      width: 51px;
+      font-size: 10px;
+      color: #333;
+      line-height: 22px;
+      vertical-align: middle;
+      text-align: center;
+      border: 1px solid #999;
+      background-color: #f8f8f8; }
+  .popup-application .agreements {
+    margin-top: 14px; }
+    .popup-application .agreements + .agreements {
+      margin-top: 0px;
+      padding-top: 10px; }
+    .popup-application .agreements .txt-agreement01 {
+      display: block;
+      text-indent: -9999px;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -219px -85px;
+      width: 179px;
+      height: 22px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .popup-application .agreements .txt-agreement01 {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 505px 234px; } }
+    .popup-application .agreements .txt-agreement02 {
+      display: block;
+      text-indent: -9999px;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -202px -149px;
+      width: 123px;
+      height: 22px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .popup-application .agreements .txt-agreement02 {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 505px 234px; } }
+    .popup-application .agreements .list-agreement {
+      margin-top: 2px;
+      padding: 7px 0 7px 13px;
+      background-color: #f0f0f0; }
+      .popup-application .agreements .list-agreement > li {
+        font-size: 9px;
+        color: #666;
+        line-height: 15px; }
+        .popup-application .agreements .list-agreement > li em:before {
+          content: '·';
+          margin-right: 2px; }
+    .popup-application .agreements .message {
+      margin-top: 5px;
+      font-size: 8px;
+      color: #999;
+      line-height: 13px; }
+    .popup-application .agreements .radios {
+      margin-top: 12px;
+      text-align: right; }
+    .popup-application .agreements .iradio {
+      display: inline-block; }
+      .popup-application .agreements .iradio + label {
+        display: inline-block;
+        margin-left: 22px;
+        text-indent: -9999px;
+        cursor: pointer;
+        text-align: left; }
+        .popup-application .agreements .iradio + label.agreement-yes {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -398px -149px;
+          width: 52px;
+          height: 17px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .popup-application .agreements .iradio + label.agreement-yes {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 505px 234px; } }
+        .popup-application .agreements .iradio + label.agreement-no {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -331px -149px;
+          width: 61px;
+          height: 17px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .popup-application .agreements .iradio + label.agreement-no {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 505px 234px; } }
+      .popup-application .agreements .iradio.checked + .agreement-yes {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: 0px -188px;
+        width: 52px;
+        height: 17px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .popup-application .agreements .iradio.checked + .agreement-yes {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 505px 234px; } }
+      .popup-application .agreements .iradio.checked + .agreement-no {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -404px -85px;
+        width: 61px;
+        height: 17px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .popup-application .agreements .iradio.checked + .agreement-no {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 505px 234px; } }
+  .popup-application .btn-done {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -101px -149px;
+    width: 95px;
+    height: 33px;
+    background-color: transparent; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .popup-application .btn-done {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 505px 234px; } }
+  .popup-application .mfp-close {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: 140px;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -179px -58px;
+    width: 30px;
+    height: 30px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .popup-application .mfp-close {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 505px 234px; } }

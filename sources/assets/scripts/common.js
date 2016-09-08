@@ -25,5 +25,8 @@ if (!window.console) {
 
 
 $(document).ready(function(e) {
+	// icheck
+	$('.radios input[type=radio]').iCheck();
+
 });
 

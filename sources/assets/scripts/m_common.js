@@ -29,13 +29,14 @@ $(document).ready(function(e) {
 	var width = $( window ).width();
 	var zoom = width/baseWidth;
 	$('body').css("zoom", zoom);
-		// alert("width: " + width + ", zoom: " + zoom);
 
 	$(window).on("orientationchange", function( event ) {
 		var width = $( window ).width();
 		var zoom = width/baseWidth;
 		$('body').css("zoom", zoom);
-		// alert("width: " + width + ", zoom: " + zoom);
 	});
+
+	// icheck
+	$('.radios input[type=radio]').iCheck();
 });
 
