@@ -214,7 +214,7 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: -15px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -544px -98px;
+    background-position: -468px -145px;
     width: 112px;
     height: 30px; }
   .page-header .btn-styler {
@@ -225,7 +225,7 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: -13px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -402px -140px;
+    background-position: -402px -113px;
     width: 178px;
     height: 26px; }
   .page-header .menus ul {
@@ -240,22 +240,22 @@ The `sprites` mixin generates identical output to the CSS template
         text-indent: -9999px; }
         .page-header .menus ul li a.btn-event01 {
           background-image: url(/assets/images/sprites.png);
-          background-position: -402px 0px;
+          background-position: 0px -396px;
           width: 300px;
           height: 20px; }
           .page-header .menus ul li a.btn-event01.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -402px -26px;
+            background-position: 0px -422px;
             width: 300px;
             height: 20px; }
         .page-header .menus ul li a.btn-event02 {
           background-image: url(/assets/images/sprites.png);
-          background-position: -402px -75px;
+          background-position: 0px -448px;
           width: 294px;
           height: 17px; }
           .page-header .menus ul li a.btn-event02.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -402px -52px;
+            background-position: 0px -471px;
             width: 294px;
             height: 17px; }
         .page-header .menus ul li a.is-selected:before {
@@ -266,7 +266,7 @@ The `sprites` mixin generates identical output to the CSS template
           left: 50%;
           margin-left: -19.5px;
           background-image: url(/assets/images/sprites.png);
-          background-position: -662px -98px;
+          background-position: -544px -71px;
           width: 39px;
           height: 19px; }
       .page-header .menus ul li + li {
@@ -332,13 +332,13 @@ article.event01 {
       left: 441px;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -586px -140px;
+      background-position: -468px -181px;
       width: 71px;
       height: 24px; }
       article.event01 > .title .btn-caption.open {
         bottom: -100px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -468px -172px;
+        background-position: -402px -211px;
         width: 71px;
         height: 24px; }
         article.event01 > .title .btn-caption.open + .caption {
@@ -377,7 +377,7 @@ article.event01 {
       right: 130px;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -402px -98px;
+      background-position: -402px -71px;
       width: 136px;
       height: 36px; }
     article.event01 .event-detail .banner {
@@ -393,7 +393,7 @@ article.event01 {
         right: 0;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -468px -202px;
+        background-position: -402px -241px;
         width: 26px;
         height: 26px; }
       article.event01 .event-detail .banner .btns {
@@ -432,15 +432,15 @@ article.event02 {
   article.event02 .event02-detail > .title {
     position: relative;
     z-index: 1;
-    padding-top: 43px;
-    height: 817px;
+    padding-top: 48px;
+    height: 813px;
     min-width: 1646px;
     background: url("/assets/images/bg_detail_02.jpg") center top no-repeat; }
     article.event02 .event02-detail > .title .title-inner {
       position: relative;
       margin: 0 auto;
-      height: 658px;
-      width: 900px;
+      height: 253px;
+      width: 714px;
       background: url("/assets/images/event02_contents.png") center top no-repeat; }
       article.event02 .event02-detail > .title .title-inner * {
         display: none; }
@@ -448,7 +448,7 @@ article.event02 {
       display: none; }
     article.event02 .event02-detail > .title .btn-naver {
       display: block;
-      margin: 20px auto 0 auto;
+      margin: 420px auto 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
       background-position: 0px -110px;
@@ -458,46 +458,73 @@ article.event02 {
       display: block;
       position: absolute;
       bottom: 26px;
-      left: 190px;
+      left: 250px;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -402px -98px;
+      background-position: -402px -71px;
       width: 136px;
       height: 36px; }
   article.event02 .event02-detail .styler-feature {
-    height: 540px;
+    position: relative;
+    height: 639px;
     background: url("/assets/images/bg_fetured.jpg") center top no-repeat; }
     article.event02 .event02-detail .styler-feature .styler-feature-inner {
       margin: 0 auto;
-      height: 540px;
-      width: 1200px;
+      height: 577px;
+      width: 1040px;
       background: url("/assets/images/event02_feature.png") center top no-repeat; }
       article.event02 .event02-detail .styler-feature .styler-feature-inner h2 {
         display: none; }
       article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature {
         overflow: hidden;
-        padding-top: 41px;
-        padding-left: 10px; }
+        padding-top: 104px;
+        padding-left: 23px; }
         article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li {
           display: block;
           float: left;
-          width: 370px; }
+          width: 304px; }
           article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li a {
             display: block;
-            height: 500px; }
+            height: 430px; }
             article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li a * {
               display: none; }
           article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li + li {
-            margin-left: 35px; }
+            margin-left: 41px; }
+    article.event02 .event02-detail .styler-feature .banner {
+      position: absolute;
+      top: 19px;
+      left: 50%;
+      z-index: 799;
+      margin-left: -670px; }
+      article.event02 .event02-detail .styler-feature .banner .btn-close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -402px -241px;
+        width: 26px;
+        height: 26px; }
+      article.event02 .event02-detail .styler-feature .banner .btns {
+        display: block;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -176px -220px;
+        width: 170px;
+        height: 170px; }
+      article.event02 .event02-detail .styler-feature .banner.fixed {
+        position: fixed;
+        top: 80px; }
   article.event02 .gift {
     height: 190px;
-    background-color: #dedede; }
+    background-color: #ddd; }
     article.event02 .gift .gift-inner {
       position: relative;
       top: -25px;
       height: 215px;
       min-width: 1646px;
-      background: url("/assets/images/bg_gift_02.png") center top no-repeat; }
+      background: url("/assets/images/bg_gift_02.jpg") center top no-repeat; }
       article.event02 .gift .gift-inner * {
         display: none; }
   article.event02 .notice {
@@ -521,7 +548,7 @@ article.event02 {
     margin-left: 323px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -402px -172px;
+    background-position: -402px -145px;
     width: 60px;
     height: 60px; }
   .popup .contents {
@@ -538,7 +565,7 @@ article.event02 {
       margin-left: -95px;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -176px -220px;
+      background-position: -402px 0px;
       width: 190px;
       height: 65px; }
   .popup.feature01 .contents {

@@ -2,34 +2,41 @@
 article.event02 { padding-top: 80px;
 
 	.event02-detail {
-		> .title { position: relative; z-index: z("default"); padding-top: 43px; height: 817px; min-width: $contents-min-width; background: url('/assets/images/bg_detail_02.jpg') center top no-repeat;
-			.title-inner { position: relative; margin: 0 auto; height: 658px; width: 900px;	 background: url('/assets/images/event02_contents.png') center top no-repeat;
+		> .title { position: relative; z-index: z("default"); padding-top: 48px; height: 813px; min-width: $contents-min-width; background: url('/assets/images/bg_detail_02.jpg') center top no-repeat;
+			.title-inner { position: relative; margin: 0 auto; height: 253px; width: 714px;	 background: url('/assets/images/event02_contents.png') center top no-repeat;
 				* { display: none; }
 			}
 			h1 { display: none; }
 		
-			.btn-naver { display: block; margin: 20px auto 0 auto; text-indent: -9999px; @include sprite($sd-btn-naver); }
-			.btn-product { display: block; position: absolute; bottom: 26px; left: 190px; text-indent: -9999px; @include sprite($sd-btn-product); }
+			.btn-naver { display: block; margin: 420px auto 0 auto; text-indent: -9999px; @include sprite($sd-btn-naver); }
+			.btn-product { display: block; position: absolute; bottom: 26px; left: 250px; text-indent: -9999px; @include sprite($sd-btn-product); }
 		}
 
-		.styler-feature { height: 540px; background: url('/assets/images/bg_fetured.jpg') center top no-repeat;
-			.styler-feature-inner { margin: 0 auto; height: 540px; width: 1200px; background: url('/assets/images/event02_feature.png') center top no-repeat;
+		.styler-feature { position: relative; height: 639px; background: url('/assets/images/bg_fetured.jpg') center top no-repeat;
+			.styler-feature-inner { margin: 0 auto; height: 577px; width: 1040px; background: url('/assets/images/event02_feature.png') center top no-repeat;
 				h2 { display: none; }
-				.list-feature { overflow: hidden; padding-top: 41px; padding-left: 10px;
-					> li { display: block; float: left; width: 370px;
-						a { display: block; height: 500px;
+				.list-feature { overflow: hidden; padding-top: 104px; padding-left: 23px;
+					> li { display: block; float: left; width: 304px;
+						a { display: block; height: 430px;
 							* { display: none; }
 						}
-						+ li { margin-left: 35px; }
+						+ li { margin-left: 41px; }
 					}
 				}
+			}
+
+			.banner { position: absolute; top: 19px; left: 50%; z-index: z("gnb") - 1; margin-left: -670px;
+				.btn-close { display: block; position: absolute; top: 0; right: 0; text-indent: -9999px; @include sprite($sd-btn-close02); }
+				.btns { display: block; text-indent: -9999px; @include sprite($sd-btn-shortcut-event01); }
+
+				&.fixed { position: fixed; top: 80px; }
 			}
 		}
 	}
 
 
-	.gift { height: 190px; background-color: #dedede;
-		.gift-inner { position: relative; top: -25px; height: 215px; min-width: $contents-min-width; background: url('/assets/images/bg_gift_02.png') center top no-repeat;
+	.gift { height: 190px; background-color: #ddd;
+		.gift-inner { position: relative; top: -25px; height: 215px; min-width: $contents-min-width; background: url('/assets/images/bg_gift_02.jpg') center top no-repeat;
 			* { display: none; }
 		}
 	}

@@ -81,6 +81,30 @@ if (isAndroid || isIOS)	{
 							</li>
 						</ul>
 					</div>
+
+					<div class="banner">
+						<button type="button" class="btn-close">닫기</button>
+						<a href="#" class="btns">LG 트롬 스타일러, 스·친·소 이벤트. 이벤트1 참여하기</a>
+					</div>
+					<script>
+					$(document).ready(function(e) {
+						var $window = $(window);
+						var $banner = $('.banner');
+						var baseHeight = $banner.offset().top - $('.page-header').height();
+
+						function resetScrollPosition(){
+							var scrollTop = $window.scrollTop();
+							
+							if( scrollTop >= baseHeight ) {
+								$('.banner').addClass('fixed');
+							} else {
+								$('.banner').removeClass('fixed');
+							}
+						}
+						$window.scroll(resetScrollPosition);
+						resetScrollPosition();
+					});	
+					</script>
 				</div>
 			</section>
 			<script>
