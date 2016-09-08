@@ -459,7 +459,8 @@ article.event02 {
       display: block;
       position: absolute;
       bottom: 26px;
-      left: 250px;
+      left: 50%;
+      margin-left: -660px;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
       background-position: -402px -340px;

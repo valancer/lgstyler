@@ -123,13 +123,22 @@ if (isAndroid || isIOS)	{
 					$(document).ready(function(e) {
 						var $window = $(window);
 						var $banner = $('.banner');
+						var $container = $('.event-detail-inner');
 						var baseHeight = $banner.offset().top - $('.page-header').height();
 
 						function resetScrollPosition(){
 							var scrollTop = $window.scrollTop();
+							var marginLeft, left;
+
+							if( $window.width() < $container.width() ) {
+								marginLeft = 0;
+								left = 141;
+							}
 							
 							if( scrollTop >= baseHeight ) {
 								$('.banner').addClass('fixed');
+								$banner.css('left', left + "px");
+								$banner.css('marginLeft', marginLeft + "px");
 							} else {
 								$('.banner').removeClass('fixed');
 							}

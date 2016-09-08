@@ -2,34 +2,34 @@
 article.event02 { padding-top: 113px;
 
 	.event02-detail {
-		> .title { position: relative; height: 545px; width: 375px; background: url('/assets/images/mobile/event02_contents@2x.jpg') center top no-repeat; background-size: 100%;
+		> .title { position: relative; height: 551px; width: 375px; background: url('/assets/images/mobile/event02_contents@2x.jpg') center top no-repeat; background-size: 100%;
 			.title-inner { display: none; }
 		}
 
-		.btn-naver { display: block; position: absolute; bottom: 37px; left: 50%; margin-left: -$sm-btn-naver-width/2; text-indent: -9999px; @include retina-sprite($sm-btn-naver-group); }
+		.btn-naver { display: block; position: absolute; bottom: 20px; left: 50%; margin-left: -$sm-btn-naver-width/2; text-indent: -9999px; @include retina-sprite($sm-btn-naver-group); }
 
-		.styler-feature { position: relative; height: 425px; width: 375px; background: url('/assets/images/mobile/bg_feature@2x.jpg') center top no-repeat; background-size: 100%;
+		.styler-feature { position: relative; height: 418px; width: 375px; background: url('/assets/images/mobile/bg_feature@2x.jpg') center top no-repeat; background-size: 100%;
 			.styler-feature-inner {
 				h2 { display: none; }
 
-				.list-feature { padding: 33px 15px 0 130px;
+				.list-feature { padding: 50px 15px 0 110px;
 					> li {
-						a { display: block; height: 118px; width: 100%; 
+						a { display: block; height: 111px; width: 100%;
 							* { display: none; }
 						}
 
-						+ li { margin-top: 4px; }
+						+ li { margin-top: 1px; }
 					}
 				}
 			}
 
-			.btn-product { display: block; position: absolute; bottom: 50px; left: 25px; text-indent: -9999px; @include retina-sprite($sm-btn-product-group); }
+			.btn-product { display: block; position: absolute; bottom: 35px; left: 25px; text-indent: -9999px; @include retina-sprite($sm-btn-product-group); }
 		}
 	}
 
 
 	.gift { background-color: #dbdbdb;
-		.gift-inner { height: 160px; background: url('/assets/images/mobile/bg_gift_02@2x.png') center bottom no-repeat; background-size: 345px 160px;
+		.gift-inner { height: 160px; width: 375px; background: url('/assets/images/mobile/bg_gift_02@2x.jpg') center bottom no-repeat; background-size: 100%;
 			* { display: none; }
 		}
 	}

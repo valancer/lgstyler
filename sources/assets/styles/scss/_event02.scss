@@ -9,7 +9,7 @@ article.event02 { padding-top: 80px;
 			h1 { display: none; }
 		
 			.btn-naver { display: block; margin: 420px auto 0 auto; text-indent: -9999px; @include sprite($sd-btn-naver); }
-			.btn-product { display: block; position: absolute; bottom: 26px; left: 250px; text-indent: -9999px; @include sprite($sd-btn-product); }
+			.btn-product { display: block; position: absolute; bottom: 26px; left: 50%; margin-left: -660px; text-indent: -9999px; @include sprite($sd-btn-product); }
 		}
 
 		.styler-feature { position: relative; height: 639px; background: url('/assets/images/bg_fetured.jpg') center top no-repeat;

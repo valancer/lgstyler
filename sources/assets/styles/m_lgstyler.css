@@ -445,7 +445,7 @@ article.event02 {
   padding-top: 113px; }
   article.event02 .event02-detail > .title {
     position: relative;
-    height: 545px;
+    height: 551px;
     width: 375px;
     background: url("/assets/images/mobile/event02_contents@2x.jpg") center top no-repeat;
     background-size: 100%; }
@@ -454,7 +454,7 @@ article.event02 {
   article.event02 .event02-detail .btn-naver {
     display: block;
     position: absolute;
-    bottom: 37px;
+    bottom: 20px;
     left: 50%;
     margin-left: -86.5px;
     text-indent: -9999px;
@@ -468,26 +468,26 @@ article.event02 {
         background-size: 505px 234px; } }
   article.event02 .event02-detail .styler-feature {
     position: relative;
-    height: 425px;
+    height: 418px;
     width: 375px;
     background: url("/assets/images/mobile/bg_feature@2x.jpg") center top no-repeat;
     background-size: 100%; }
     article.event02 .event02-detail .styler-feature .styler-feature-inner h2 {
       display: none; }
     article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature {
-      padding: 33px 15px 0 130px; }
+      padding: 50px 15px 0 110px; }
       article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li a {
         display: block;
-        height: 118px;
+        height: 111px;
         width: 100%; }
         article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li a * {
           display: none; }
       article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li + li {
-        margin-top: 4px; }
+        margin-top: 1px; }
     article.event02 .event02-detail .styler-feature .btn-product {
       display: block;
       position: absolute;
-      bottom: 50px;
+      bottom: 35px;
       left: 25px;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
@@ -502,8 +502,9 @@ article.event02 {
     background-color: #dbdbdb; }
     article.event02 .gift .gift-inner {
       height: 160px;
-      background: url("/assets/images/mobile/bg_gift_02@2x.png") center bottom no-repeat;
-      background-size: 345px 160px; }
+      width: 375px;
+      background: url("/assets/images/mobile/bg_gift_02@2x.jpg") center bottom no-repeat;
+      background-size: 100%; }
       article.event02 .gift .gift-inner * {
         display: none; }
   article.event02 .notice {
