@@ -267,5 +267,5 @@ gulp.task('build:mobile', ['clean:build'], function() {
 });
 
 gulp.task('release', ['clean:build'], function(callback) {
-	runSequence('clean:release', ['sass-release', 'scripts-build', 'html-build'], ['copy:assets'], ['csscomb', 'copy:release'], ['publish'], callback);
+	runSequence('clean:release', ['sass-release', 'scripts-build', 'html-build'], ['copy:assets'], ['csscomb', 'copy:release'], callback);
 });

@@ -170,7 +170,7 @@ if (!isAndroid && !isIOS)	{
 				<strong>유해물질 제거</strong>
 				<strong>미세먼지 제거</strong>
 			</p>
-			<a href="#" class="btn-application">응모하기</a>
+			<a href="#popup-application" class="btn-application">응모하기</a>
 		</div>
 	</aside>
 
@@ -183,7 +183,7 @@ if (!isAndroid && !isIOS)	{
 				<strong>99.9% 살균</strong>
 				<strong>바이러스 제거</strong>
 			</p>
-			<a href="#" class="btn-application">응모하기</a>
+			<a href="#popup-application" class="btn-application">응모하기</a>
 		</div>
 	</aside>
 
@@ -195,8 +195,92 @@ if (!isAndroid && !isIOS)	{
 				<strong>습기 90% 제거</strong>
 				<strong>볼륨감 78% 회복</strong>
 			</p>
-			<a href="#" class="btn-application">응모하기</a>
+			<a href="#popup-application" class="btn-application">응모하기</a>
 		</div>		
+	</aside>
+	<script>
+	$(document).ready(function(e){
+		$('.popup .btn-application').magnificPopup({
+			fixedContentPos: true,
+			mainClass: 'mfp-fade',
+			closeOnContentClick: false,
+			closeOnBgClick: true,
+			closeBtnInside: true
+		});
+
+		$('.btn-done').on('click', function(e) {
+			e.preventDefault();
+			$.magnificPopup.close();
+		});
+	});
+	</script>
+
+
+	<!-- 응모팝업 -->
+	<aside id="popup-application" class="popup-application mfp-hide">
+		<h2 class="title"><span>이벤트 참여를 위한 정보를 입력하고 약관에 동의해주세요.</span></h2>
+
+		<fieldset class="container">
+			<legend>이벤트 참여</legend>
+
+			<fieldset class="basic-info">
+				<legend>기본 정보 입력 폼</legend>
+
+				<p>
+					<label for="" class="txt-name"><span>이름</span></label>
+					<input type="text" id="" name="" style="width: 91px;">
+				</p>
+
+				<p>
+					<label for="" class="txt-phone"><span>연락처</span></label>
+					<input type="text" id="" name="">
+					-
+					<input type="text" id="" name="">
+					-
+					<input type="text" id="" name="">
+				</p>
+			</fieldset>
+
+
+			<fieldset class="agreements">
+				<legend>동의</legend>
+
+				<label for="" class="txt-agreement01">[필수항목] 개인정보 수집 이용동의 (이벤트참여)</label>
+				<ul class="list-agreement">
+					<li><em>목적</em> : 이벤트 응모내역 확인 시 본인 확인</li>
+					<li><em>항목</em> : 이름, 휴대폰 번호</li>
+					<li><em>보유기간</em> : 이벤트 종료일로부터 3개월까지 보유 후 파기</li>
+				</ul>
+				<p class="message">※ 귀하께서는 본 동의를 거절하실 수 있습니다. 단, 거절하신 경우 이벤트 참여가 제한될 수 있습니다.</p>
+
+				<div class="radios">
+					<input type="radio" id="agreement01_01" name="agreement01">
+					<label for="agreement01_01" class="agreement-yes">동의함</label>
+					<input type="radio" id="agreement01_02" name="agreement01">
+					<label for="agreement01_02" class="agreement-no">동의안함</label>
+				</div>
+			</fieldset>
+
+
+			<fieldset class="agreements">
+				<legend>동의</legend>
+
+				<label for="" class="txt-agreement02">[필수항목] 개인정보 취급위탁 동의</label>
+				<ul class="list-agreement">
+					<li><em>수탁자</em> : HS 애드</li>
+					<li><em>목적</em> : 시스템관리, 이벤트와 관련된 업무(경품 제공 등)</li>
+				</ul>
+
+				<div class="radios">
+					<input type="radio" id="agreement02_01" name="agreement02">
+					<label for="agreement02_01" class="agreement-yes">동의함</label>
+					<input type="radio" id="agreement02_02" name="agreement02">
+					<label for="agreement02_02" class="agreement-no">동의안함</label>
+				</div>
+			</fieldset>
+
+			<input type="submit" class="btn-done" value="참여완료">
+		</fieldset>
 	</aside>
 
 
