@@ -1,7 +1,7 @@
 /* CONTENTS */
 article.event01 { padding-top: 113px;
 
-	> .title { padding-top: 112px; height: 163px; background: url('/assets/images/mobile/bg_video@2x.png') center top no-repeat; background-size: 375px 275px;
+	> .title { padding-top: 112px; height: 163px; background: url('/assets/images/mobile/bg_video@2x.jpg') center top no-repeat; background-size: 375px 275px;
 		h1 { display: none; }
 
 		.video-container { margin: 0 auto; height: 138px; width: 237px; border: 2px solid #fff;
@@ -9,20 +9,20 @@ article.event01 { padding-top: 113px;
 		}
 	}
 
-	.event-detail { background: url('/assets/images/mobile/bg_detail@2x.jpg') center top no-repeat; background-size: cover;
-		.event-detail-inner { position: relative; padding: 28px 0 30px 15px;
+	.event-detail { height: 894px; background: url('/assets/images/mobile/bg_detail@2x.jpg') center top no-repeat; background-size: 100%;
+		.event-detail-inner { position: relative; padding: 27px 0 0 0;
 			&:before { content: ''; display: block; position: absolute; top: 407px; right: 0px; height: 405px; width: 121px; background: url('/assets/images/mobile/bg_styler@2x.png') right top no-repeat; background-size: 100%; }
 		}
-		.event-detail-contents { display: block; position: relative; height: 734px; width: 335px; background: url('/assets/images/mobile/event01_contents@2x.png') center top no-repeat; background-size: 335px 734px;
+		.event-detail-contents { display: block; position: relative; height: 833px; width: 375px; background: url('/assets/images/mobile/event01_contents@2x.png') center top no-repeat; background-size: 100%;
 			* { display: none; }
 		}
 
-		.btn-reply { display: block; margin: 50px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-btn-reply-group); }
+		.btn-reply { display: block; position: absolute; top: 319px; left: 50%; margin-left: -$sm-btn-reply-width/2; text-indent: -9999px; @include retina-sprite($sm-btn-reply-group); }
 		.btn-product { display: block; position: absolute; top: 758px; right: 32px; text-indent: -9999px; @include retina-sprite($sm-btn-product-group); }
 	}
 
-	.gift { background-color: #dbdbdb;
-		.gift-inner { height: 160px; background: url('/assets/images/mobile/bg_gift@2x.png') center bottom no-repeat; background-size: 345px 160px;
+	.gift { background-color: #ddd;
+		.gift-inner { height: 160px; width: 375px; background: url('/assets/images/mobile/bg_gift@2x.jpg') center bottom no-repeat; background-size: 100%;
 			* { display: none; }
 		}
 	}
