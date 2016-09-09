@@ -128,19 +128,20 @@ if (isAndroid || isIOS)	{
 
 						function resetScrollPosition(){
 							var scrollTop = $window.scrollTop();
-							var marginLeft, left;
+							var marginLeft;
 
 							if( $window.width() < $container.width() ) {
-								marginLeft = 0;
-								left = 141;
+								marginLeft = -$window.width()/2 - 70;
+							} else {
+								marginLeft = -$container.width()/2 - 70;
 							}
 							
 							if( scrollTop >= baseHeight ) {
 								$('.banner').addClass('fixed');
-								$banner.css('left', left + "px");
 								$banner.css('marginLeft', marginLeft + "px");
 							} else {
 								$('.banner').removeClass('fixed');
+								$banner.css('marginLeft', -$container.width()/2 - 70 + "px");
 							}
 						}
 						$window.scroll(resetScrollPosition);

@@ -4,7 +4,7 @@
  * variable
  */
 body {
-  min-width: 1646px;
+  min-width: 1200px;
   background-color: #fff; }
 
 /* Common Style */
@@ -22,7 +22,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 body {
   position: relative;
   /*min-height: 800px;*/
-  min-width: 1646px;
+  min-width: 1200px;
   margin: 0 auto;
   font-size: 100%;
   line-height: 1.3em;
@@ -300,13 +300,13 @@ article.event01 {
     position: relative;
     z-index: 1;
     padding-top: 209px;
-    min-width: 1646px;
+    min-width: 1200px;
     background: url("/assets/images/bg_video.jpg") center top no-repeat; }
     article.event01 > .title .title-inner {
       position: relative;
       margin: 0 auto;
       height: 491px;
-      width: 1646px; }
+      width: 1200px; }
     article.event01 > .title h1 {
       display: none; }
     article.event01 > .title .video-container {
@@ -330,14 +330,14 @@ article.event01 {
       display: block;
       position: absolute;
       bottom: 15px;
-      left: 441px;
+      left: 219px;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
       background-position: -262px -424px;
       width: 71px;
       height: 24px; }
       article.event01 > .title .btn-caption.open {
-        bottom: -100px;
+        bottom: -95px;
         background-image: url(/assets/images/sprites.png);
         background-position: -339px -424px;
         width: 71px;
@@ -345,13 +345,14 @@ article.event01 {
         article.event01 > .title .btn-caption.open + .caption {
           display: block; }
   article.event01 .event-detail {
-    min-width: 1646px;
+    overflow: hidden;
+    min-width: 1200px;
     background: url("/assets/images/bg_detail.jpg") center top no-repeat; }
     article.event01 .event-detail .event-detail-inner {
       position: relative;
       margin: 0 auto;
       height: 1138px;
-      width: 1646px; }
+      width: 1200px; }
     article.event01 .event-detail .event-detail-contents {
       display: block;
       margin: 0 auto;
@@ -375,7 +376,7 @@ article.event01 {
       display: block;
       position: absolute;
       bottom: 145px;
-      right: 130px;
+      right: -100px;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
       background-position: -402px -340px;
@@ -386,7 +387,7 @@ article.event01 {
       top: 180px;
       left: 50%;
       z-index: 799;
-      margin-left: -682px; }
+      margin-left: -670px; }
       article.event01 .event-detail .banner .btn-close {
         display: block;
         position: absolute;
@@ -414,7 +415,7 @@ article.event01 {
       position: relative;
       top: -25px;
       height: 215px;
-      min-width: 1646px;
+      min-width: 1200px;
       background: url("/assets/images/bg_gift.png") center top no-repeat; }
       article.event01 .gift .gift-inner * {
         display: none; }
@@ -422,7 +423,7 @@ article.event01 {
     background-color: #f1f1f1; }
     article.event01 .notice .notice-inner {
       height: 370px;
-      min-width: 1646px;
+      min-width: 1200px;
       background: url("/assets/images/bg_notice.png") center 52px no-repeat; }
       article.event01 .notice .notice-inner * {
         display: none; }
@@ -435,7 +436,7 @@ article.event02 {
     z-index: 1;
     padding-top: 48px;
     height: 813px;
-    min-width: 1646px;
+    min-width: 1200px;
     background: url("/assets/images/bg_detail_02.jpg") center top no-repeat; }
     article.event02 .event02-detail > .title .title-inner {
       position: relative;
@@ -467,10 +468,12 @@ article.event02 {
       width: 136px;
       height: 36px; }
   article.event02 .event02-detail .styler-feature {
-    position: relative;
+    overflow: hidden;
     height: 639px;
+    min-width: 1200px;
     background: url("/assets/images/bg_fetured.jpg") center top no-repeat; }
     article.event02 .event02-detail .styler-feature .styler-feature-inner {
+      position: relative;
       margin: 0 auto;
       height: 577px;
       width: 1040px;
@@ -497,7 +500,7 @@ article.event02 {
       top: 19px;
       left: 50%;
       z-index: 799;
-      margin-left: -670px; }
+      margin-left: -750px; }
       article.event02 .event02-detail .styler-feature .banner .btn-close {
         display: block;
         position: absolute;
@@ -525,7 +528,7 @@ article.event02 {
       position: relative;
       top: -25px;
       height: 215px;
-      min-width: 1646px;
+      min-width: 1200px;
       background: url("/assets/images/bg_gift_02.jpg") center top no-repeat; }
       article.event02 .gift .gift-inner * {
         display: none; }
@@ -533,7 +536,7 @@ article.event02 {
     background-color: #f1f1f1; }
     article.event02 .notice .notice-inner {
       height: 370px;
-      min-width: 1646px;
+      min-width: 1200px;
       background: url("/assets/images/bg_notice_02.png") center 52px no-repeat; }
       article.event02 .notice .notice-inner * {
         display: none; }

@@ -7,23 +7,23 @@ article.event01 { padding-top: 80px;
 
 		.video-container { margin: 0 auto; height: 441px; width: 757px; border: 4px solid #fff; }
 		.caption { display: none; overflow: scroll; margin: -2px auto; padding: 15px 20px; height: 83px; width: 722px; font-size: 13px; color: #333; line-height: 18px; border: 1px solid #fff; background-color: #e2e2e2; }
-		.btn-caption { display: block; position: absolute; bottom: 15px; left: 441px; text-indent: -9999px; @include sprite($sd-btn-caption);
-			&.open { bottom: -100px; @include sprite($sd-btn-caption-open);
+		.btn-caption { display: block; position: absolute; bottom: 15px; left: 219px; text-indent: -9999px; @include sprite($sd-btn-caption);
+			&.open { bottom: -95px; @include sprite($sd-btn-caption-open);
 				+ .caption { display: block; }
 			}
 		}
 	}
 
 
-	.event-detail { min-width: $contents-min-width; background: url('/assets/images/bg_detail.jpg') center top no-repeat;
+	.event-detail { overflow: hidden; min-width: $contents-min-width; background: url('/assets/images/bg_detail.jpg') center top no-repeat;
 		.event-detail-inner { position: relative; margin: 0 auto; height: 1138px; width: $contents-min-width; }
 		.event-detail-contents { display: block; margin: 0 auto; height: 1012px; width: 1090px; background: url('/assets/images/event01_contents.png') center 23px no-repeat;
 			* { display: none; }
 		}
 		.btn-reply { display: block; position: absolute; top: 448px; left: 50%; margin-left: -$sd-btn-reply-width/2; text-indent: -9999px; @include sprite($sd-btn-reply); }
-		.btn-product { display: block; position: absolute; bottom: 145px; right: 130px; text-indent: -9999px; @include sprite($sd-btn-product); }
+		.btn-product { display: block; position: absolute; bottom: 145px; right: -100px; text-indent: -9999px; @include sprite($sd-btn-product); }
 
-		.banner { position: absolute; top: 180px; left: 50%; z-index: z("gnb") - 1; margin-left: -682px;
+		.banner { position: absolute; top: 180px; left: 50%; z-index: z("gnb") - 1; margin-left: -670px;
 			.btn-close { display: block; position: absolute; top: 0; right: 0; text-indent: -9999px; @include sprite($sd-btn-close02); }
 			.btns { display: block; text-indent: -9999px; @include sprite($sd-btn-shortcut-event02); }
 

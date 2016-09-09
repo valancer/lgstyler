@@ -80,40 +80,43 @@ if (isAndroid || isIOS)	{
 								</a>
 							</li>
 						</ul>
-					</div>
 
-					<div class="banner">
-						<button type="button" class="btn-close">닫기</button>
-						<a href="#" class="btns">LG 트롬 스타일러, 스·친·소 이벤트. 이벤트1 참여하기</a>
-					</div>
-					<script>
-					$(document).ready(function(e) {
-						var $window = $(window);
-						var $banner = $('.banner');
-						var $container = $('.styler-feature');
-						var baseHeight = $banner.offset().top - $('.page-header').height();
+						<div class="banner">
+							<button type="button" class="btn-close">닫기</button>
+							<a href="#" class="btns">LG 트롬 스타일러, 스·친·소 이벤트. 이벤트1 참여하기</a>
+						</div>
+						<script>
+						$(document).ready(function(e) {
+							var $window = $(window);
+							var $banner = $('.banner');
+							var $container = $('.styler-feature-inner');
+							var baseHeight = $banner.offset().top - $('.page-header').height();
 
-						function resetScrollPosition(){
-							var scrollTop = $window.scrollTop();
-							var marginLeft, left;
+							function resetScrollPosition(){
+								var scrollTop = $window.scrollTop();
+								var marginLeft;
 
-							if( $window.width() < $container.width() ) {
-								marginLeft = 0;
-								left = 153;
+								if( $window.width() < $container.width() ) {
+									marginLeft = -$window.width()/2 - 70;
+									console.log("window : " + marginLeft);
+								} else {
+									marginLeft = -$container.width()/2 - 150;
+									console.log("container : " + marginLeft);
+								}
+
+								if( scrollTop >= baseHeight ) {
+									$banner.addClass('fixed');
+									$banner.css('marginLeft', marginLeft + "px");
+								} else {
+									$banner.removeClass('fixed');
+									$banner.css('marginLeft', -$container.width()/2 - 150 + "px");
+								}
 							}
-
-							if( scrollTop >= baseHeight ) {
-								$banner.addClass('fixed');
-								$banner.css('left', left + "px");
-								$banner.css('marginLeft', marginLeft + "px");
-							} else {
-								$banner.removeClass('fixed');
-							}
-						}
-						$window.scroll(resetScrollPosition);
-						resetScrollPosition();
-					});	
-					</script>
+							$window.scroll(resetScrollPosition);
+							resetScrollPosition();
+						});	
+						</script>
+					</div>
 				</div>
 			</section>
 			<script>
