@@ -25,19 +25,19 @@ if (isAndroid || isIOS)	{
 						<h1>LG 트롬 스타일러 검색하고 최고의 기능에 투표하라</h1>
 
 						<p>
-							네이버에서 검색 후 당신에게 꼭 필요한 스타일러만의 옷 케어 기능을 선택하면 추첨을 통해, LG 트롬 스타일러의 행운과 다양한 선물을 드립니다.<br>
+							네이버에서 검색 후, 이벤트 페이지에서 당신에게 꼭 필요한 스타일러만의 옷 케어 기능을 선택하면 추첨을 통해, LG 트롬 스타일러의 행운과 다양한 선물을 드립니다.<br>
 							이벤트 기간    2016년 9월 12일 ~ 10월 9일        당첨자 발표    2016년 10월 21일
 						</p>
 
 						<ol>
 							<li>
-								네이버에서 ‘LG 트롬 스타일러’를 검색합니다.							
+								네이버에서 ‘LG 트롬 스타일러’를 검색하고 브랜드 검색에서 [검색 이벤트] 클릭!
 							</li>
 							<li>
-								브랜드 검색 내 3가지 이미지 중, 마음에 드는 기능을 클릭해 주세요.
+								투표팝업에서 3가지 기능 중, 마음에 드는 기능을 선택하고 [참여하기] 버튼 클릭!
 							</li>
 							<li>
-								이벤트페이지에서 개인정보 입력 후 응모완료!
+								응모팝업에서 개인정보 입력 후 응모완료!
 							</li>
 						</ol>
 					</div>
@@ -53,31 +53,31 @@ if (isAndroid || isIOS)	{
 
 						<ul class="list-feature">
 							<li>
-								<a href="#feature01" class="btn-feature01">
+								<div class="btn-feature01">
 									<strong>무빙행어</strong>
 									<p>
 										붙은 먼지들을 팍팍 털어 입고싶은 당신의 옷! 이제 댄스~댄스로 해결!<br>
 										분당 최대 200회 움직여 황사, 미세먼지를 옷에서 분리
 									</p>
-								</a>
+								</div>
 							</li>
 							<li>
-								<a href="#feature02" class="btn-feature02">
+								<div class="btn-feature02">
 									<strong>트루스팀</strong>
 									<p>
 										생활 속 세균까지 최대 99.9% 살균하자! 옷들의시원한 사우나~<br>
 										옷에서 분리된 미세먼지 및 황사에 수분 입자를 입혀 바닥으로 떨어짐
 									</p>
-								</a>
+								</div>
 							</li>
 							<li>
-								<a href="#feature03" class="btn-feature03">
+								<div class="btn-feature03">
 									<strong>저온건조</strong>
 									<p>
 										항상 보송보송하고 상쾌한 옷을 입고싶은 당신! 산뜻하게 입자~<br>
 										저온 건조 기술로 옷감 손상 없이 눅눅하고 쾌쾌한 의류를 산뜻하게 관리
 									</p>
-								</a>
+								</div>
 							</li>
 						</ul>
 
@@ -119,32 +119,6 @@ if (isAndroid || isIOS)	{
 					</div>
 				</div>
 			</section>
-			<script>
-			$(document).ready(function(e) {
-				// 무빙행어
-				$('.list-feature .btn-feature01').magnificPopup({
-  					fixedContentPos: true,
-					mainClass: 'mfp-fade',
-					closeOnContentClick: false,
-					closeOnBgClick: true,
-					closeBtnInside: true
-				});
-				// 트루스팀
-				$('.list-feature .btn-feature02').magnificPopup({
-  					fixedContentPos: true,
-					mainClass: 'mfp-fade',
-					closeOnContentClick: false,
-					closeOnBgClick: true
-				});
-				// 저온건조
-				$('.list-feature .btn-feature03').magnificPopup({
-  					fixedContentPos: true,
-					mainClass: 'mfp-fade',
-					closeOnContentClick: false,
-					closeOnBgClick: true
-				});
-			});
-			</script>
 
 
 			<section class="gift">
@@ -197,57 +171,60 @@ if (isAndroid || isIOS)	{
 	</main>
 
 
-	<aside id="feature01" class="popup feature01 mfp-hide">
+	<!-- 기능 선택 팝업 -->
+	<aside id="popup-select-featured" class="popup select-feature mfp-hide">
 		<div class="contents">
-			<h2>무빙행어에 투표하셨습니다.</h2>
-			<p>
-				매번 세탁할 수도 없고, 털어도 털면서 다시 들이 마시게 되는 미세먼지를 무빙행어 기능으로 분당 최대 200회 움직여 황사, 미세먼지를 옷에서 개운하게 분리하세요!
-				<strong>유해물질 제거</strong>
-				<strong>미세먼지 제거</strong>
-			</p>
+			
+			<h2 class="title">당신에게 필요한 기능을 선택하고 [참여하기] 버튼을 눌러주세요.</h2>
 
-			<a href="#popup-application" class="btn-application">응모하기</a>
+			<div class="radios feature01">
+				<input type="radio" id="featured01" name="featured">
+				<label for="featured01">
+					<h3>무빙행어</h3>
+					<p>
+						매번 세탁할 수도 없고, 털어도 털면서 다시 들이 마시게 되는 미세먼지를 무빙행어 기능으로 분당 최대 200회 움직여 황사, 미세먼지를 옷에서 개운하게 분리하세요!
+						<strong>유해물질 제거</strong>
+						<strong>미세먼지 제거</strong>
+					</p>
+				</label>
+			</div>
+
+			<div class="radios feature02">
+				<input type="radio" id="featured02" name="featured">
+				<label for="featured02">
+					<h3>투르스팀</h3>
+					<p>
+						햇볕에도 사라지지 않는 생활 속 세균 (식중독균, 장염.알레르기 유발균, 바이러스)을 최대 99.9% 제거하고 옷에서 분리된 미세먼지 및 황사에 수분 입자를 입혀 바닥으로 떨어뜨려 95.5% 제거까지!
+						<strong>99.9% 살충</strong>
+						<strong>99.9% 살균</strong>
+						<strong>바이러스 제거</strong>
+					</p>
+				</label>
+			</div>
+
+			<div class="radios feature03">
+				<input type="radio" id="featured03" name="featured">
+				<label for="featured03">
+					<h3>저온건조</h3>
+					<p>
+						냄새나는 양복, 한올 한올 풍성한 니트, 고급 의류나 기능성 의류까지 남아있는 물기를 빨아들이는 저온 건조 기술로 옷감의 수축이나 변형 없이 상쾌한 느낌을 살려 손상 없이 새 옷 느낌 그대로, 보송보송하게!
+						<strong>습기 90% 제거</strong>
+						<strong>볼륨감 78% 회복</strong>
+					</p>
+				</label>
+			</div>
+
+			<a href="#" class="btn-application">참여하기</a>
 		</div>
-	</aside>
-
-	<aside id="feature02" class="popup feature02 mfp-hide">
-		<div class="contents">
-			<h2>투르스팀에 투표하셨습니다.</h2>
-			<p>
-				햇볕에도 사라지지 않는 생활 속 세균 (식중독균, 장염.알레르기 유발균, 바이러스)을 최대 99.9% 제거하고 옷에서 분리된 미세먼지 및 황사에 수분 입자를 입혀 바닥으로 떨어뜨려 95.5% 제거까지!
-				<strong>99.9% 살충</strong>
-				<strong>99.9% 살균</strong>
-				<strong>바이러스 제거</strong>
-			</p>
-			<a href="#popup-application" class="btn-application">응모하기</a>
-		</div>
-	</aside>
-
-	<aside id="feature03" class="popup feature03 mfp-hide">
-		<div class="contents">
-			<h2>저온건조에 투표하셨습니다.</h2>
-			<p>
-				냄새나는 양복, 한올 한올 풍성한 니트, 고급 의류나 기능성 의류까지 남아있는 물기를 빨아들이는 저온 건조 기술로 옷감의 수축이나 변형 없이 상쾌한 느낌을 살려 손상 없이 새 옷 느낌 그대로, 보송보송하게!
-				<strong>습기 90% 제거</strong>
-				<strong>볼륨감 78% 회복</strong>
-			</p>
-			<a href="#popup-application" class="btn-application">응모하기</a>
-		</div>		
 	</aside>
 	<script>
-	$(document).ready(function(e){
-		$('.popup .btn-application').magnificPopup({
-			fixedContentPos: true,
-			mainClass: 'mfp-fade',
-			closeOnContentClick: false,
-			closeOnBgClick: true,
-			closeBtnInside: true
-		});
-
-		$('.btn-done').on('click', function(e) {
-			e.preventDefault();
-			$.magnificPopup.close();
-		});
+	$(window.document).ready(function(){
+		$.magnificPopup.open({
+			items: {
+				src: '#popup-application',
+			}
+			,alignTop: true
+		}, 0);
 	});
 	</script>
 

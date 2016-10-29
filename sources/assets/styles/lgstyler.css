@@ -395,14 +395,14 @@ article.event01 {
         right: 0;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -332px -152px;
+        background-position: -352px -262px;
         width: 26px;
         height: 26px; }
       article.event01 .event-detail .banner .btns {
         display: block;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: 0px -220px;
+        background-position: -176px -220px;
         width: 170px;
         height: 170px; }
       article.event01 .event-detail .banner.fixed {
@@ -442,7 +442,7 @@ article.event02 {
       position: relative;
       margin: 0 auto;
       height: 253px;
-      width: 714px;
+      width: 897px;
       background: url("/assets/images/event02_contents.png") center top no-repeat; }
       article.event02 .event02-detail > .title .title-inner * {
         display: none; }
@@ -488,10 +488,10 @@ article.event02 {
           display: block;
           float: left;
           width: 304px; }
-          article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li a {
+          article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li div {
             display: block;
             height: 430px; }
-            article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li a * {
+            article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li div * {
               display: none; }
           article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li + li {
             margin-left: 41px; }
@@ -508,14 +508,14 @@ article.event02 {
         right: 0;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -332px -152px;
+        background-position: -352px -262px;
         width: 26px;
         height: 26px; }
       article.event02 .event02-detail .styler-feature .banner .btns {
         display: block;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -176px -220px;
+        background-position: 0px -220px;
         width: 170px;
         height: 170px; }
       article.event02 .event02-detail .styler-feature .banner.fixed {
@@ -543,14 +543,15 @@ article.event02 {
 
 .popup {
   margin: 0 auto;
-  height: 914px;
-  width: 668px; }
+  height: 764px;
+  width: 1018px;
+  background: url("/assets/images/bg_select_featured.png") center top no-repeat; }
   .popup .mfp-close {
     display: block;
     position: absolute;
     top: 5px;
     left: 50%;
-    margin-left: 323px;
+    margin-left: 498px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
     background-position: -598px -50px;
@@ -560,8 +561,6 @@ article.event02 {
     position: relative;
     height: 100%;
     width: 100%; }
-    .popup .contents * {
-      display: none; }
     .popup .contents .btn-application {
       display: block;
       position: absolute;
@@ -573,11 +572,50 @@ article.event02 {
       background-position: -402px -121px;
       width: 190px;
       height: 65px; }
-  .popup.feature01 .contents {
+  .popup.select-feature .contents {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 106px 11px 0px 7px;
+    text-align: center; }
+  .popup.select-feature .title {
+    display: none; }
+  .popup.select-feature .radios {
+    display: inline-block;
+    height: 5000px;
+    width: 310px;
+    vertical-align: top; }
+    .popup.select-feature .radios .iradio {
+      display: block; }
+      .popup.select-feature .radios .iradio + label {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        cursor: pointer; }
+        .popup.select-feature .radios .iradio + label:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -23px;
+          left: 50%;
+          margin-left: -21px;
+          text-indent: -9999px;
+          background-image: url(/assets/images/sprites.png);
+          background-position: -332px -161px;
+          width: 42px;
+          height: 45px; }
+        .popup.select-feature .radios .iradio + label * {
+          display: none; }
+      .popup.select-feature .radios .iradio.checked + label:before {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -332px -110px;
+        width: 42px;
+        height: 45px; }
+  .popup.select-feature .feature01 {
     background: url("/assets/images/popup01.png") center top no-repeat; }
-  .popup.feature02 .contents {
+  .popup.select-feature .feature02 {
     background: url("/assets/images/popup02.png") center top no-repeat; }
-  .popup.feature03 .contents {
+  .popup.select-feature .feature03 {
     background: url("/assets/images/popup03.png") center top no-repeat; }
 
 /* 응모팝업 */
@@ -622,7 +660,7 @@ article.event02 {
       .popup-application .basic-info label.txt-phone {
         margin-left: 50px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -332px -110px;
+        background-position: -352px -220px;
         width: 40px;
         height: 36px; }
     .popup-application .basic-info input[type=text] {
@@ -682,7 +720,7 @@ article.event02 {
         text-align: left; }
         .popup-application .agreements .iradio + label.agreement-yes {
           background-image: url(/assets/images/sprites.png);
-          background-position: -617px -192px;
+          background-position: -184px -424px;
           width: 72px;
           height: 24px; }
         .popup-application .agreements .iradio + label.agreement-no {
@@ -692,7 +730,7 @@ article.event02 {
           height: 24px; }
       .popup-application .agreements .iradio.checked + .agreement-yes {
         background-image: url(/assets/images/sprites.png);
-        background-position: -184px -424px;
+        background-position: -617px -192px;
         width: 72px;
         height: 24px; }
       .popup-application .agreements .iradio.checked + .agreement-no {

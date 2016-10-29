@@ -269,7 +269,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           text-indent: -9999px; }
           .page-header .menus ul li a.btn-event01 {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -219px -19px;
+            background-position: 0px -116px;
             width: 162px;
             height: 27px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -278,7 +278,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
                 background-size: 505px 234px; } }
             .page-header .menus ul li a.btn-event01.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -219px -52px;
+              background-position: -219px -19px;
               width: 162px;
               height: 27px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -287,7 +287,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
                   background-size: 505px 234px; } }
           .page-header .menus ul li a.btn-event02 {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: 0px -116px;
+            background-position: -168px -116px;
             width: 162px;
             height: 27px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -296,7 +296,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
                 background-size: 505px 234px; } }
             .page-header .menus ul li a.btn-event02.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -168px -116px;
+              background-position: -219px -52px;
               width: 162px;
               height: 27px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -476,11 +476,11 @@ article.event02 {
       display: none; }
     article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature {
       padding: 50px 15px 0 110px; }
-      article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li a {
+      article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li div {
         display: block;
         height: 111px;
         width: 100%; }
-        article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li a * {
+        article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li div * {
           display: none; }
       article.event02 .event02-detail .styler-feature .styler-feature-inner .list-feature > li + li {
         margin-top: 1px; }
@@ -522,8 +522,10 @@ article.event02 {
 
 .popup {
   margin: 0 auto;
-  height: 492px;
-  width: 334px; }
+  height: 632px;
+  width: 334px;
+  background: url("/assets/images/mobile/bg_select_featured@2x.png") center top no-repeat;
+  background-size: 100%; }
   .popup .mfp-close {
     display: block;
     position: absolute;
@@ -543,8 +545,6 @@ article.event02 {
     position: relative;
     height: 100%;
     width: 100%; }
-    .popup .contents * {
-      display: none; }
     .popup .contents .btn-application {
       display: block;
       position: absolute;
@@ -560,13 +560,63 @@ article.event02 {
         .popup .contents .btn-application {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
           background-size: 505px 234px; } }
-  .popup.feature01 .contents {
+  .popup.select-feature .contents {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 43px 6px 0px 24px; }
+  .popup.select-feature .title {
+    display: none; }
+  .popup.select-feature .radios {
+    display: block;
+    margin-top: 5px; }
+    .popup.select-feature .radios .iradio {
+      display: block; }
+      .popup.select-feature .radios .iradio + label {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        cursor: pointer; }
+        .popup.select-feature .radios .iradio + label:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: -10px;
+          margin-top: -11.5px;
+          text-indent: -9999px;
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -60px -211px;
+          width: 21px;
+          height: 23px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .popup.select-feature .radios .iradio + label:before {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 505px 234px; } }
+        .popup.select-feature .radios .iradio + label * {
+          display: none; }
+      .popup.select-feature .radios .iradio.checked + label:before {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -33px -211px;
+        width: 21px;
+        height: 23px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .popup.select-feature .radios .iradio.checked + label:before {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 505px 234px; } }
+  .popup.select-feature .feature01 {
+    height: 150px;
+    width: 300px;
     background: url("/assets/images/mobile/popup01@2x.png") center top no-repeat;
     background-size: 100%; }
-  .popup.feature02 .contents {
+  .popup.select-feature .feature02 {
+    height: 165px;
+    width: 300px;
     background: url("/assets/images/mobile/popup02@2x.png") center top no-repeat;
     background-size: 100%; }
-  .popup.feature03 .contents {
+  .popup.select-feature .feature03 {
+    height: 170px;
+    width: 300px;
     background: url("/assets/images/mobile/popup03@2x.png") center top no-repeat;
     background-size: 100%; }
 
@@ -614,7 +664,7 @@ article.event02 {
       .popup-application .basic-info label.txt-name {
         margin-right: 12px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -33px -211px;
+        background-position: -87px -211px;
         width: 19px;
         height: 23px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -705,7 +755,7 @@ article.event02 {
               background-size: 505px 234px; } }
         .popup-application .agreements .iradio + label.agreement-no {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -331px -149px;
+          background-position: -404px -85px;
           width: 61px;
           height: 17px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -723,7 +773,7 @@ article.event02 {
             background-size: 505px 234px; } }
       .popup-application .agreements .iradio.checked + .agreement-no {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -404px -85px;
+        background-position: -331px -149px;
         width: 61px;
         height: 17px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

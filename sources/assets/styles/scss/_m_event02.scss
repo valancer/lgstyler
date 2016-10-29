@@ -14,7 +14,7 @@ article.event02 { padding-top: 113px;
 
 				.list-feature { padding: 50px 15px 0 110px;
 					> li {
-						a { display: block; height: 111px; width: 100%;
+						div { display: block; height: 111px; width: 100%;
 							* { display: none; }
 						}
 
@@ -42,24 +42,36 @@ article.event02 { padding-top: 113px;
 }
 
 
-.popup { margin: 0 auto; height: 492px; width: 334px;
+.popup { margin: 0 auto; height: 632px; width: 334px; background: url('/assets/images/mobile/bg_select_featured@2x.png') center top no-repeat; background-size: 100%;
 	.mfp-close { display: block; position: absolute; top: -30px; left: 50%; margin-left: 140px; text-indent: -9999px; @include retina-sprite($sm-btn-close-group); }
 
 	.contents { position: relative; height: 100%; width: 100%;
-		* { display: none; }
 		.btn-application { display: block; position: absolute; bottom: 28px; left: 50%; margin-left: -$sm-btn-application-width/2; text-indent: -9999px; @include retina-sprite($sm-btn-application-group); }
 	}
 
-	&.feature01 {
-		.contents { background: url('/assets/images/mobile/popup01@2x.png') center top no-repeat; background-size: 100%; }
-	}
+	&.select-feature {
+		.contents { overflow: hidden; box-sizing: border-box; padding: 43px 6px 0px 24px; }
 
-	&.feature02 {
-		.contents { background: url('/assets/images/mobile/popup02@2x.png') center top no-repeat; background-size: 100%; }
-	}
+		.title { display: none; }
+		.radios { display: block; margin-top: 5px;
+			.iradio { display: block;
+				+ label { display: block; position: relative; height: 100%; width: 100%; cursor: pointer;
+					&:before { content: ''; display: block; position: absolute; top: 50%; left: -10px; margin-top: -$sm-radio-featured-height/2; text-indent: -9999px; @include retina-sprite($sm-radio-featured-group); }
 
-	&.feature03 {
-		.contents { background: url('/assets/images/mobile/popup03@2x.png') center top no-repeat; background-size: 100%; }
+					* { display: none; }
+				}
+
+				&.checked {
+					+ label {
+						&:before { @include retina-sprite($sm-radio-featured-selected-group); }
+					}
+				}
+			}
+		}
+
+		.feature01 { height: 150px; width: 300px; background: url('/assets/images/mobile/popup01@2x.png') center top no-repeat; background-size: 100%; }
+		.feature02 { height: 165px; width: 300px; background: url('/assets/images/mobile/popup02@2x.png') center top no-repeat; background-size: 100%; }
+		.feature03 { height: 170px; width: 300px; background: url('/assets/images/mobile/popup03@2x.png') center top no-repeat; background-size: 100%; }
 	}
 }
 
